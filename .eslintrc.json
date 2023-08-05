@@ -3,13 +3,24 @@
     "browser": true,
     "es2021": true
   },
-  "extends": "airbnb-base",
+  "extends": ["airbnb-base", "eslint:recommended", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+
   "rules": {
+    "no-undef": "off",
+    "eqeqeq": "off",
+    "no-void": "off",
+    "no-caller": "off",
+    "guard-for-in": "off",
+    "no-restricted-syntax": "off",
+    "object-curly-newline": "off",
+    "class-methods-use-this": "off",
+    "no-restricted-properties": "off",
     "import/prefer-default-export": "off",
     "import/no-extraneous-dependencies": "off",
     "no-unused-vars": [
